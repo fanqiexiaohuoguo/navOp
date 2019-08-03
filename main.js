@@ -1,7 +1,7 @@
 // 一.准备数据结构,初始化数据
-var hashA=init()
-var keys=hashA["keys"]
-var hash=hashA["hash"]
+var inithash=init()
+var keys=inithash["keys"]
+var hash=inithash["hash"]
 
 // 二.生成键盘
 generateKeyboard(keys,hash)
@@ -9,7 +9,7 @@ generateKeyboard(keys,hash)
 // 三.监听键盘事件
 listenToUser(hash)
 
-//下面是工具函数
+//工具函数
 function init(){
     var keys={
         0:['q','w','e','r','t','y','u','i','o','p'],
